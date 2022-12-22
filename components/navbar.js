@@ -9,33 +9,33 @@ import { myLoader } from "@utils/all";
 export default function Navbar(props) {
   const leftmenu = [
     {
-      label: "Home",
+      label: "Ana Sayfa",
       href: "/"
     },
     {
-      label: "About",
+      label: "Hakkımızda",
       href: "/about"
     },
     {
-      label: "Contact",
+      label: "İletişim",
       href: "/contact"
     }
   ];
 
   const rightmenu = [
     {
-      label: "Archive",
+      label: "Arşiv",
       href: "/archive"
     },
     {
-      label: "Pro Version",
-      href: "https://stablo-pro.web3templates.com/",
+      label: "Site Sahibi",
+      href: "https://www.linkedin.com/in/mehmetsemihbabacan/",
       external: true,
-      badge: "new"
+      badge: "Gerçek Semih"
     },
     {
-      label: "Download",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
+      label: "Semih Bir Daha",
+      href: "https://www.linkedin.com/in/mehmetsemihbabacan/",
       external: true
     }
   ];
@@ -52,7 +52,7 @@ export default function Navbar(props) {
                 <div className="flex-col items-center justify-start order-1 hidden w-full md:flex md:flex-row md:justify-end md:w-auto md:order-none md:flex-1">
                   {leftmenu.map((item, index) => (
                     <Link href={item.href} key={index}>
-                      <a className="px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-500">
+                      <a className="px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-red-500">
                         {item.label}
                       </a>
                     </Link>
@@ -93,7 +93,7 @@ export default function Navbar(props) {
                   </Link>
                   <Disclosure.Button
                     aria-label="Toggle Menu"
-                    className="px-2 py-1 ml-auto text-gray-500 rounded-md md:hidden focus:text-blue-500 focus:outline-none dark:text-gray-300 ">
+                    className="px-2 py-1 ml-auto text-gray-500 rounded-md md:hidden focus:text-red-500 focus:outline-none dark:text-gray-300 ">
                     <svg
                       className="w-6 h-6 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
@@ -119,12 +119,12 @@ export default function Navbar(props) {
                   {rightmenu.map((item, index) => (
                     <Link href={item.href} key={index}>
                       <a
-                        className="px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-500"
+                        className="px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-red-500"
                         target={item.external ? "_blank" : ""}
                         rel={item.external ? "noopener" : ""}>
                         <span> {item.label}</span>
                         {item.badge && (
-                          <span className="bg-blue-100 text-blue-600 text-xs font-semibold ml-2 px-2 py-0.5 rounded dark:bg-cyan-200 dark:text-blue-800 ">
+                          <span className="bg-red-100 text-red-600 text-xs font-semibold ml-2 px-2 py-0.5 rounded dark:bg-cyan-200 dark:text-red-800 ">
                             {item.badge}
                           </span>
                         )}
@@ -138,7 +138,7 @@ export default function Navbar(props) {
                   {mobilemenu.map((item, index) => (
                     <Link href={item.href} key={index}>
                       <a
-                        className="px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-500"
+                        className="px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-red-500"
                         target={item.external ? "_blank" : ""}
                         rel={item.external ? "noopener" : ""}>
                         {item.label}
