@@ -34,7 +34,7 @@ export default function Navbar(props) {
       badge: "Gerçek Semih"
     },
     {
-      label: "Semih Bir Daha",
+      label: "Sahip Otra Vez",
       href: "https://www.linkedin.com/in/mehmetsemihbabacan/",
       external: true
     }
