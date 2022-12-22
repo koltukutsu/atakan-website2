@@ -13,31 +13,33 @@ export default function Navbar(props) {
       href: "/"
     },
     {
+      label: "Etkinlikler",
+      href: "/archive"
+    }
+  ];
+
+  const rightmenu = [
+    
+    {
       label: "Hakkımızda",
-      href: "/about"
+      href: "/about",
+      badge: "Biz Kimiz"
     },
     {
       label: "İletişim",
       href: "/contact"
     }
-  ];
-
-  const rightmenu = [
-    {
-      label: "Arşiv",
-      href: "/archive"
-    },
-    {
-      label: "Site Sahibi",
-      href: "https://www.linkedin.com/in/mehmetsemihbabacan/",
-      external: true,
-      badge: "Gerçek Semih"
-    },
-    {
-      label: "Sahip Otra Vez",
-      href: "https://www.linkedin.com/in/mehmetsemihbabacan/",
-      external: true
-    }
+    // {
+    //   label: "Site Sahibi",
+    //   href: "https://www.linkedin.com/in/mehmetsemihbabacan/",
+    //   external: true,
+    //   badge: "Gerçek Semih"
+    // },
+    // {
+    //   label: "Sahip Otra Vez",
+    //   href: "https://www.linkedin.com/in/mehmetsemihbabacan/",
+    //   external: true
+    // }
   ];
 
   const mobilemenu = [...leftmenu, ...rightmenu];

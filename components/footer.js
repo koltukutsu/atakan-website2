@@ -65,7 +65,7 @@ export default function Footer(props) {
 const Backlink = () => {
   return (
     <a
-      href="https://web3templates.com/templates/stablo-minimal-blog-website-template"
+      href="https://instagram.com/mimarder_?igshid=YmMyMTA2M2Y="
       target="_blank"
       rel="noopener"
       className="fixed flex px-3 py-1 space-x-2 text-sm font-semibold text-gray-900 bg-white border border-gray-300 rounded shadow-sm place-items-center right-5 bottom-5 dark:bg-trueGray-900 dark:border-trueGray-700 dark:text-trueGray-300">
@@ -88,7 +88,7 @@ const Backlink = () => {
         />
       </svg>
 
-      <span> Purchase Pro ↗</span>
+      <span> Mimarder</span>
     </a>
   );
 };
