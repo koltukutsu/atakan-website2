@@ -13,6 +13,10 @@ export default function PostList({ post, aspect, preloadImage }) {
   const AuthorimageProps = post?.author?.image
     ? GetImage(post.author.image)
     : null;
+    console.log("First");
+    console.log(imageProps.blurDataURL);
+    console.log("Second");
+    console.log(imageProps.src);
   return (
     <>
       <div className="cursor-pointer group">

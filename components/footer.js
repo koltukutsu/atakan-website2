@@ -23,17 +23,17 @@ export default function Footer(props) {
             href="https://web3templates.com/?ref=stablo-template"
             rel="noopener"
             target="_blank">
-            Web3Templates
+            Mimarder
           </a>
         </span>
         <span>&middot;</span>
         <span>
           {" "}
           <a
-            href="https://github.com/web3templates/stablo"
+            href="https://instagram.com/mimarder_?igshid=YmMyMTA2M2Y="
             rel="noopener"
             target="_blank">
-            Github
+            Instagram
           </a>
         </span>
       </div>

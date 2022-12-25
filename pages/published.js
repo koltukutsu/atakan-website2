@@ -56,9 +56,10 @@ export default function Post(props) {
             }}
           />
           <Container>
-            <div className="grid gap-10 lg:gap-10 md:grid-cols-2 ">
-            </div>
-            {
+          <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
+          Yayınlarımız
+        </h1>
+            {/* {
               <div className="grid gap-10 lg:gap-10 md:grid-cols-2 ">
               {posts.slice(0, 2).map(post => (
                 <PostList
@@ -69,16 +70,8 @@ export default function Post(props) {
                 />
               ))}
             </div>
-            }
-            <div className="grid gap-10 mt-10 lg:gap-10 md:grid-cols-2 xl:grid-cols-3 ">
-              {posts.slice(3).map(post => (
-                <PostList
-                  key={post._id}
-                  post={post}
-                  aspect="square"
-                />
-              ))}
-            </div>
+            } */}
+            
           </Container>
         </Layout>
       )}

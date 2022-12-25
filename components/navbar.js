@@ -9,12 +9,12 @@ import { myLoader } from "@utils/all";
 export default function Navbar(props) {
   const leftmenu = [
     {
-      label: "Ana Sayfa",
-      href: "/"
-    },
-    {
       label: "Etkinlikler",
       href: "/archive"
+    },
+    {
+      label: "Yayınlar",
+      href: "/published"
     }
   ];
 
@@ -62,7 +62,7 @@ export default function Navbar(props) {
                 </div>
                 <div className="flex items-center justify-between w-full md:w-auto">
                   <Link href="/">
-                    <a className="w-28 dark:hidden">
+                    <a className="w-48 dark:hidden">
                       {props.logo ? (
                         <Image
                           {...GetImage(props.logo)}
@@ -78,7 +78,7 @@ export default function Navbar(props) {
                     </a>
                   </Link>
                   <Link href="/">
-                    <a className="hidden w-28 dark:block">
+                    <a className="hidden w-48 dark:block">
                       {props.logoalt ? (
                         <Image
                           {...GetImage(props.logoalt)}
