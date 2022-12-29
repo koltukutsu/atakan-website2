@@ -32,7 +32,7 @@ Pandemi öncesi dönemde fiziksel ortamda faaliyet sürdürülen ve düzenli bir
         </div>
 
         <div className="grid grid-cols-3 gap-y-12 gap-x-5 mt-6 mb-16 md:mt-16 md:mb-32 md:gap-16">
-          {authors.slice(0, 9).sort(function(a, b) {
+          {authors.slice(0).sort(function(a, b) {
     var a_name = a["name"].toUpperCase();
     var b_name = b["name"].toUpperCase();
     return (a_name < b_name) ? -1 : (a_name > b_name) ? 1: 0;
