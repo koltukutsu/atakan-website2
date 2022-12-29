@@ -59,7 +59,7 @@ export default function Post(props) {
           <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
           Yayınlarımız
         </h1>
-            <div className={`flex flex-wrap`}>
+            {/* <div className={`flex flex-wrap`}>
           <div className={`w-5/6 sm:w-1/2 p-6 mt-20`}>
             <h3
               className={`text-5xl text-gray-800 font-bold leading-none mb-3`}
@@ -75,7 +75,7 @@ export default function Post(props) {
               alt={firstItem?.title}
             />
           </div>
-        </div>
+        </div> */}
             
           </Container>
         </Layout>
