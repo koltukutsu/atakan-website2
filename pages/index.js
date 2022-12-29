@@ -71,7 +71,7 @@ export default function Post(props) {
             </div>
             }
             <div className="grid gap-10 mt-10 lg:gap-10 md:grid-cols-2 xl:grid-cols-3 ">
-              {posts.slice(2).map(post => (
+              {posts.slice(2, 8).map(post => (
                 <PostList
                   key={post._id}
                   post={post}
@@ -79,6 +79,20 @@ export default function Post(props) {
                 />
               ))}
             </div>
+            <span>
+          {" "}
+          <div className="flex justify-center my-10 mx-0">
+
+          <a
+            href="/etkinlikler"
+            rel="noopener"
+            target="_blank"
+            className="text-2xl focus:text-red-500 font-semibold"
+            >
+            Hepsini Gör
+          </a>
+          </div>
+        </span>
           </Container>
         </Layout>
       )}

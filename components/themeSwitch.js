@@ -22,9 +22,9 @@ const ThemeSwitch = () => {
         name="themeSwitch"
         value={theme}
         onChange={e => setTheme(e.target.value)}>
-        <option value="system">System</option>
-        <option value="dark">Dark</option>
-        <option value="light">Light</option>
+        <option value="system">Sistem</option>
+        <option value="dark">Karanlık</option>
+        <option value="light">Aydınlık</option>
       </select>
     </div>
   );

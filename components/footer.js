@@ -8,13 +8,14 @@ export default function Footer(props) {
   return (
     <Container className="mt-10 border-t border-gray-100 dark:border-gray-800">
       <div className="text-sm text-center">
-        Copyright © {new Date().getFullYear()} {props?.copyright}. All
-        rights reserved.
+        {/* Copyright © {new Date().getFullYear()} {props?.copyright}. Tüm */}
+        Copyright © {new Date().getFullYear()} Mimarder. Tüm
+        Hakları Saklıdır.
       </div>
       <div className="flex justify-center gap-1 mt-1 text-sm text-center text-gray-500 dark:text-gray-600">
         <span>
           {" "}
-          Made by{" "}
+          
           {/*  // ** 🙏  Can I ask you a favor? 🙏 **
             // Please do not remove the below link.
            // It helps us to grow & continue our work. Thank you.
@@ -25,6 +26,8 @@ export default function Footer(props) {
             target="_blank">
             Mimarder
           </a>
+          {" "}
+          tarafından yapılmıştır
         </span>
         <span>&middot;</span>
         <span>
@@ -39,7 +42,7 @@ export default function Footer(props) {
       </div>
       <div className="flex items-center justify-between mt-2">
         <div className="mt-5">
-          <a
+          {/* <a
             href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
             target="_blank"
             rel="noopener"
@@ -48,12 +51,12 @@ export default function Footer(props) {
               src={VercelLogo}
               layout="fixed"
               loader={myLoader}
-              alt="Powered by Vercel"
+              alt="Yükleniyor"
               unoptimized={true}
               width="150"
               height="25"
             />
-          </a>
+          </a> */}
         </div>
         <ThemeSwitch />
       </div>
