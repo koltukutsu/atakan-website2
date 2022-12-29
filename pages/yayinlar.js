@@ -59,18 +59,23 @@ export default function Post(props) {
           <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
           Yayınlarımız
         </h1>
-            {/* {
-              <div className="grid gap-10 lg:gap-10 md:grid-cols-2 ">
-              {posts.slice(0, 2).map(post => (
-                <PostList
-                  key={post._id}
-                  post={post}
-                  aspect="landscape"
-                  preloadImage={true}
-                />
-              ))}
-            </div>
-            } */}
+            <div className={`flex flex-wrap`}>
+          <div className={`w-5/6 sm:w-1/2 p-6 mt-20`}>
+            <h3
+              className={`text-5xl text-gray-800 font-bold leading-none mb-3`}
+            >
+              ATAKAN BABA
+            </h3>
+            <p className={`text-gray-600`}>{firstItem?.description}</p>
+          </div>
+          <div className={`w-full sm:w-1/2 p-6`}>
+            <img
+              className="h-6/6"
+              src={firstItem?.img}
+              alt={firstItem?.title}
+            />
+          </div>
+        </div>
             
           </Container>
         </Layout>

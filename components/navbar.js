@@ -10,11 +10,11 @@ export default function Navbar(props) {
   const leftmenu = [
     {
       label: "Etkinlikler",
-      href: "/archive"
+      href: "/etkinlikler"
     },
     {
       label: "Yayınlar",
-      href: "/published"
+      href: "/yayinlar"
     }
   ];
 
@@ -22,12 +22,12 @@ export default function Navbar(props) {
     
     {
       label: "Hakkımızda",
-      href: "/about",
+      href: "/hakkimizda",
       badge: "Biz Kimiz"
     },
     {
       label: "İletişim",
-      href: "/contact"
+      href: "/iletisim"
     }
     // {
     //   label: "Site Sahibi",

@@ -7,16 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function About({ authors, siteconfig }) {
-  // console.log("Atakan kontrol");
-  // console.log(authors);
-  // console.log(authors[0]["name"]);
 
-  // authors = authors.sort(function(a, b) {
-  //   var a_name = a["name"].toUpperCase();
-  //   var b_name = b["name"].toUpperCase();
-  //   return (a_name < b_name) ? -1 : (a_name > b_name) ? 1: 0;
-  // });
-  // console.log(au)
   return (
     <Layout {...siteconfig}>
       <Container>
@@ -40,8 +31,12 @@ Pandemi öncesi dönemde fiziksel ortamda faaliyet sürdürülen ve düzenli bir
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-5 mt-6 mb-16 md:mt-16 md:mb-32 md:gap-16">
-          {authors.slice(0, -1).map(author => {
+        <div className="grid grid-cols-3 gap-y-12 gap-x-5 mt-6 mb-16 md:mt-16 md:mb-32 md:gap-16">
+          {authors.slice(0, 9).sort(function(a, b) {
+    var a_name = a["name"].toUpperCase();
+    var b_name = b["name"].toUpperCase();
+    return (a_name < b_name) ? -1 : (a_name > b_name) ? 1: 0;
+  }).map(author => {
           {/* {authors.map(author => { */}
             const { width, height, ...imgprops } = GetImage(
               author?.image
