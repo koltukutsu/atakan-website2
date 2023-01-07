@@ -84,7 +84,7 @@ export default function Post(props) {
           <div className="flex justify-center my-10 mx-0">
 
           <a
-            href="/etkinlikler"
+            href="/archive"
             rel="noopener"
             target="_blank"
             className="text-2xl focus:text-red-500 font-semibold"
